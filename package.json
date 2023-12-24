@@ -1,0 +1,38 @@
+{
+  "name": "stripe-mailgun-fulfillment",
+  "version": "1.0.0",
+  "description": "Simple listener service to get completed orders for digital items from Stripe and send them out via mailgun.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkrsmk/stripe-mailgun-fulfillment.git"
+  },
+  "keywords": [
+    "stripe",
+    "mailgun",
+    "webhook",
+    "fulfillment",
+    "email",
+    "order",
+    "checkout"
+  ],
+  "author": "Jia Yang (https://adventgineering.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hkrsmk/stripe-mailgun-fulfillment/issues"
+  },
+  "homepage": "https://github.com/hkrsmk/stripe-mailgun-fulfillment#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "stripe": "^14.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

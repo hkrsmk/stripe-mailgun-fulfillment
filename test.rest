@@ -1,0 +1,9 @@
+@hostname = http://localhost
+@port = 4242
+@host = {{hostname}}:{{port}}/webhook
+
+###
+POST {{host}}
+Content-Type: application/json
+
+"fake": "unsigned request"
