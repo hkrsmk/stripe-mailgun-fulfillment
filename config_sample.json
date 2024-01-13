@@ -30,6 +30,6 @@
         "subject": "Hey you, awesome!",
         "replyTo": "reply2this@company.com",
         "fulfilled": "thanks!",
-        "fail": "payment failed"
+        "failed": "payment failed"
     }
   }
