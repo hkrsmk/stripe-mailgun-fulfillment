@@ -1,0 +1,35 @@
+{
+    "descriptions":{
+        "stripe": "keys required for stripe authentication, see https://stripe.com/docs/payments/checkout/fulfill-orders",
+        "stripe.key": "this is available at https://dashboard.stripe.com/apikeys",
+        "stripe.signingSecret": "this is available in your Dashboard's webhook settings once you run the stripe CLI service",
+        "stripe.port": "the port your listening service will run on",
+        "mailgun": "keys required for mailgun authentication, see https://www.npmjs.com/package/nodemailer-mailgun-transport",
+        "mailgun.key": "your sending api key, available at https://app.mailgun.com/app/sending/domains/{DOMAIN_NAME}/sending-keys",
+        "mailgun.domain": "domain that emails are sending to, available at https://app.mailgun.com/mg/sending/domains or https://app.eu.mailgun.com/mg/sending/domains",
+        "mailgun.domain.continued": "you can use a sandboxed domain in testing, but remember to add authorized recipient (required)",
+        "mailgun.host": "For USA region you should use api endpoint api.mailgun.net for EU region use api.eu.mailgun.net",
+        "email": "email headers for nodemailer-mailgun-transport",
+        "email.fulfilled": "success message",
+        "email.failed": "failure to collect payment message"
+    },
+    "stripe":{
+        "key": "sk_test_Ou1w6LVt3zmVipDVJsvMeQsc",
+        "signingSecret": "YOUR_SECRET_HERE",
+        "port": "YOUR_PORT_HERE"
+    },
+    "mailgun":{
+        "key": "YOUR_KEY_HERE",
+        "domain": "YOUR_DOMAIN_HERE",
+        "host": "api.mailgun.net"
+    },
+    "email":{
+        "from": "myemail@example.com",
+        "cc": "second@domain.com",
+        "bcc": "secretagent@company.gov",
+        "subject": "Hey you, awesome!",
+        "replyTo": "reply2this@company.com",
+        "fulfilled": "thanks!",
+        "fail": "payment failed"
+    }
+  }
